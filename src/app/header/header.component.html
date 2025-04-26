@@ -1,0 +1,54 @@
+<nav class="bg-gray-900  text-gray-400  border-b border-gray-400 flex items-center justify-between flex-wrap p-6">
+    <div class="flex items-center space-x-2">
+        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-13">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+        </svg>
+        <p class="font-semibold text-2xl tracking-tight">HEMANTH <span class="text-blue-800">KUMAR</span></p>
+    </div>
+
+    <div class="block lg:hidden">
+        <button (click)="fun()" type="button" class="flex items-center px-3 py-2 rounded text-gray-400 dark:text-white hover:text-blue-700">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>      
+        </button>
+    </div>
+    
+    <div class="hidden text-gray-400 w-full text-xl lg:flex lg:items-center lg:w-auto">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 md:flex-row">
+            <li> <!-- Home -->
+                <a routerLink="/" class="block mt-4 lg:inline-block lg:mt-0 mr-4 hover:text-blue-700 hover:underline hover:">Home</a>
+            </li>
+            <li> <!-- About -->
+                <a routerLink="/about" class="block mt-4 lg:inline-block lg:mt-0 mr-4 hover:text-blue-700 hover:underline">About</a>
+            </li>
+            <li> <!-- Skills -->
+                <a routerLink="/skills" class="block mt-4 lg:inline-block lg:mt-0 mr-4 hover:text-blue-700 hover:underline">Skills</a>
+            </li>
+            <li> <!-- Projects -->
+                <a routerLink="/projects" class="block mt-4 lg:inline-block lg:mt-0 mr-4 hover:text-blue-700 hover:underline">Projects</a>
+            </li>
+            <li> <!-- Contact -->
+                <a routerLink="/contact" class="block mt-4 lg:inline-block lg:mt-0 mr-4 hover:text-blue-700 hover:underline">Contact</a>
+            </li>
+        </ul>        
+    </div>
+    <!-- <div id="mobileMenu" class="md:hidden hidden bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg">
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">About</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">Skills</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">Projects</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">Contact</a>
+    </div> -->
+</nav>
+
+<div *ngIf="show" class="absolute bg-gray-900 text-gray-400 mt-0.5 right-1 w-1/5 bg-opacity-10 backdrop-filter backdrop-blur-lg lg:hidden border-2 border-blue-500 rounded">
+    <a routerLink="/"  class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300  hover:text-black">Home</a>
+    <a routerLink="/about"  class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300  hover:text-black">About</a>
+    <a routerLink="/skills"  href="#" class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300  hover:text-black">Skills</a>
+    <a routerLink="/projects" class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300  hover:text-black">Projects</a>
+    <a routerLink="/contact" class="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300  hover:text-black">Contact</a>
+</div>
+  
+
+
+  
